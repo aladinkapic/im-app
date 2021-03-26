@@ -30274,9 +30274,13 @@ module.exports = function(module) {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // Include jQuery
+// ** Include swiper ** //
+// require('./layout/libraries/swiper');
 // ** Include login system ** //
 
 __webpack_require__(/*! ./system/login/login */ "./resources/js/system/login/login.js");
+
+__webpack_require__(/*! ./layout/menu */ "./resources/js/layout/menu.js");
 
 /***/ }),
 
@@ -30309,6 +30313,55 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/layout/menu.js":
+/*!*************************************!*\
+  !*** ./resources/js/layout/menu.js ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$(document).ready(function () {
+  var left_open = 0;
+  var currently_open = -2;
+  $(".exit_menu").click(function () {
+    var left_m = document.getElementById("left_menu");
+    var window_w = window.innerWidth;
+
+    if (!left_open) {
+      left_open++;
+      left_m.style.right = '-50px';
+    } else {
+      left_open = 0;
+      left_m.style.right = -(left_m.clientWidth + 50) + 'px';
+    }
+  });
+  $(document).on('click', '.left_with_sublinks', function () {
+    var index = $(this).attr('index');
+    var sublinks = document.getElementById("left_menu").getElementsByClassName("menu_sublinks"); //var arrow = document.getElementById("left_menu").getElementsByClassName("fa-icon");
+
+    console.log(index, sublinks);
+
+    if (index === currently_open) {
+      index = -1;
+      currently_open = -2;
+    }
+
+    for (var i = 0; i < sublinks.length; i++) {
+      if (i === index) {
+        var all_sublinks = sublinks[i].getElementsByClassName("menu_sublink");
+        currently_open = index; //arrow[i].className = "fas fa-icon fa-angle-up";
+
+        sublinks[i].style.height = all_sublinks.length * 40 + 'px';
+      } else {
+        sublinks[i].style.height = '0px'; //arrow[i].className = "fas fa-icon fa-angle-down";
+      }
+    }
+  });
+  $(".left_with_sublinks").click(function () {});
+});
 
 /***/ }),
 
@@ -30370,15 +30423,27 @@ $(document).ready(function () {
 
 /***/ }),
 
+/***/ "./resources/sass/public.scss":
+/*!************************************!*\
+  !*** ./resources/sass/public.scss ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!******************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/public.scss ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\webApps\im-app\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\webApps\im-app\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\webApps\im-app\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\webApps\im-app\resources\sass\public.scss */"./resources/sass/public.scss");
 
 
 /***/ })

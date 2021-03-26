@@ -1,0 +1,81 @@
+.h-latest-news{
+    display: inline-flex; justify-content: space-between;
+    .h-ln-preview{
+        position: relative; left:0px; top:0px; width: calc(33.33% - 15px); min-height: 400px;
+
+        .h-lnp-img-part{
+            position: relative; left:0px; top:0px; width: 100%;
+            img{
+                position: relative; left:0px; top:0px; width: 100%;
+            }
+            .h-lnp-published{
+                position: absolute; right:15px; top:15px; width: 50px; height: 50px; background: #fff; text-align: center; padding-top:3px;
+                span{margin:0px;}
+                .s-digit{
+                    font-size:16px; font-weight: bold;
+                }
+                .h-lnp-p-line{
+                    position: relative; left:5px; width: calc(100% - 10px); height: 1px; background: rgba(0,0,0,0.3);
+                }
+                .s-text{
+                    font-weight: bold; font-size:12px;
+                }
+            }
+            .h-lnp-published:hover{
+                cursor: pointer;
+            }
+        }
+
+        .h-lnp-rest{
+            position: relative; left:15px; top:0px; width: calc(100% - 30px);
+            h5{
+                color:#CEE002;
+            }
+            h3{
+                padding-left:0px;
+            }
+            p{
+                font-size:14px; text-align: justify;
+            }
+
+            a{
+                p{
+                    font-weight: bold; text-decoration: underline grey; margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    .h-ln-preview:hover{
+        -webkit-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.2);
+        box-shadow: 0px 0px 13px 1px rgba(0,0,0,0.2);
+        .h-lnp-img-part{
+            .h-lnp-published{
+                cursor: pointer; background: #CEE002;
+                span{color:#fff;}
+                .h-lnp-p-line{background: rgba(255,255,255,0.8)}
+            }
+        }
+    }
+}
+
+
+// ** Mobile friendly container ** //
+@media only screen and (max-width: 1500px) {
+    .h-latest-news{ left:calc(50% - 600px); width: 1200px; }
+}
+
+@media only screen and (max-width: 1300px) {
+    .h-latest-news{ left:calc(50% - 500px); width: 1000px; }
+}
+@media only screen and (max-width: 1000px) {
+    .h-latest-news{ left:50px; width: calc(100% - 100px); }
+}
+@media only screen and (max-width: 800px) {
+    .h-latest-news{
+        left:20px; width: calc(100% - 40px); flex-wrap: wrap;
+        .h-ln-preview{
+            width: 100%; margin-bottom: 30px;
+        }
+    }
+}

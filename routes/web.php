@@ -23,6 +23,13 @@ Route::group(['namespace' => 'SystemCore\Login', 'prefix' => '/login'], function
     Route::get ('/logout',                          'LoginController@logout')->name('login.logout');
 });
 
+// ------------------------------------------------------------------------------------------------------------------ //
+
+Route::group(['namespace' => 'PublicPart', 'prefix' => '/'], function(){
+    Route::get ('/',                                'HomeController@home')->name('public.home');
+});
+
+
 Route::group(['namespace' => 'SystemCore\App', 'prefix' => '/', 'middleware' => 'loggedUser'], function(){
 
     Route::group(['namespace' => 'Dashboard', 'prefix' => '/dashboard'], function() {
