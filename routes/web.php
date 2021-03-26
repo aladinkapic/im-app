@@ -16,3 +16,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['namespace' => 'SystemCore\Login', 'prefix' => '/login'], function(){
+    Route::get ('/',                                'LoginController@login')->name('login');
+    Route::post('/log-me-in',                       'LoginController@loginMeIn')->name('login.log-me-in');
+    Route::get ('/logout',                          'LoginController@logout')->name('login.logout');
+});
+
+Route::group(['namespace' => 'SystemCore\App', 'prefix' => '/', 'middleware' => 'loggedUser'], function(){
+
+    Route::group(['namespace' => 'Dashboard', 'prefix' => '/dashboard'], function() {
+        Route::get('/', 'DashboardController@index')->name('system-core.app.dashboard');
+    });
+});
