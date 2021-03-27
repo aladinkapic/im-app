@@ -1,13 +1,13 @@
 <div id="top-menu">
     <div id="menu-links">
-        <a href="#">
+        <a href="{{route('public.home')}}">
             <div class="logo-wrapper">
                 <h2> Firma D.O.O </h2>
             </div>
         </a>
         <div class="links-part">
             <div class="single-link">
-                <a href="#">{{__('Startseite')}}</a>
+                <a href="{{route('public.home')}}">{{__('Startseite')}}</a>
             </div>
             <div class="single-link">
                 <a href="#">{{__('Über uns')}}</a>
@@ -16,7 +16,7 @@
                 <a href="#">{{__('Blog')}}</a>
             </div>
             <div class="single-link">
-                <a href="#">{{__('Kontaktiere uns')}}</a>
+                <a href="{{route('public.contact-us')}}">{{__('Kontaktiere uns')}}</a>
             </div>
         </div>
         <div class="sign-up">

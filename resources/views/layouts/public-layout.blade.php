@@ -19,6 +19,7 @@
         <!-- Javascript files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.min.js"></script>
         <script src="{{asset('js/app.js')}}"></script>
+        @yield('other-js-link')
     </head>
     <body>
         @include('layouts.includes.menu')

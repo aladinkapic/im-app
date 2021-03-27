@@ -11,4 +11,7 @@ class HomeController extends Controller{
     public function home(){
         return view($this->_br.'home');
     }
+    public function contactUs(){
+        return view($this->_br.'contact-us.contact-us');
+    }
 }

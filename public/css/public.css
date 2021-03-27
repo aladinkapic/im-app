@@ -2223,3 +2223,241 @@ button {
   }
 }
 
+#google_map {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.contact-info {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contact-info .ci-line {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 160px;
+}
+
+.contact-info .ci-line .line {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  background: #A0522D;
+  margin-top: 10px;
+}
+
+.contact-info .ci-rest {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: calc(100% - 300px);
+}
+
+.contact-info .ci-rest .ci-r-header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+}
+
+.contact-info .ci-rest .ci-r-header h3 {
+  font-size: 25px;
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+
+.contact-info .ci-rest .ci-r-header h3 span {
+  color: grey;
+  font-size: 20px;
+}
+
+.contact-info .ci-rest .ci-r-two-columns {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 50%;
+}
+
+.contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column h3 {
+  font-weight: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+.contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column h3 span {
+  color: grey;
+  font-size: 20px;
+}
+
+.contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column p {
+  margin: 0px;
+}
+
+.contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column h4 {
+  margin-top: 0px;
+}
+
+.contact-info .ci-rest .ci-form-header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.contact-info .ci-rest .ci-form-header input {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 30%;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+}
+
+.contact-info .ci-rest .ci-form-message {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 200px;
+}
+
+.contact-info .ci-rest .ci-form-message textarea {
+  position: relative;
+  left: 0px;
+  width: calc(100% - 22px);
+  top: 0px;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.contact-info .ci-rest .ci-button {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.contact-info .ci-rest .ci-button button {
+  position: relative;
+  height: 34px;
+  border: none;
+  color: #333;
+  background: #cee002;
+  padding: 3px 20px;
+}
+
+/********* MOBILE VERSION ************/
+
+@media screen and (max-width: 1300px) {
+  .contact-info .ci-rest {
+    width: calc(100% - 200px);
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column h3 {
+    font-size: 20px;
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column p {
+    margin: 0px;
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column h4 {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .contact-info .ci-line {
+    width: 100%;
+    height: 40px;
+  }
+
+  .contact-info .ci-line .line {
+    width: 160px;
+  }
+
+  .contact-info .ci-rest {
+    width: calc(100% - 0px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-info {
+    flex-wrap: wrap;
+  }
+
+  .contact-info .ci-line {
+    width: 100%;
+    height: 40px;
+  }
+
+  .contact-info .ci-line .line {
+    width: 160px;
+  }
+
+  .contact-info .ci-rest {
+    width: calc(100% - 0px);
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns {
+    flex-wrap: wrap;
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column {
+    width: 100%;
+  }
+
+  .contact-info .ci-rest .ci-r-two-columns .ci-r-tc-column:last-child {
+    margin-top: 30px;
+  }
+
+  .contact-info .ci-rest .ci-form-header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .contact-info .ci-rest .ci-form-header input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+

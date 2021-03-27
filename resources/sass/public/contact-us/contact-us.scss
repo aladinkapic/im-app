@@ -1,0 +1,132 @@
+
+#google_map {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 500px;
+    margin-top:20px;
+}
+
+.contact-info{
+    position: relative; left:0px; top:0px; width: 100%; display: inline-flex; justify-content: space-between; margin-top:30px;
+    .ci-line{
+        position: relative; left:0px; top:0px; width: 160px;
+        .line{
+            position: relative; width: 100%; height: 4px; background: #A0522D; margin-top:10px;
+        }
+    }
+    .ci-rest{
+        position: relative; left:0px; top:0px; width: calc(100% - 300px);
+        .ci-r-header{
+            position: relative; left:0px; top:0px; width: 100%; height: 60px;
+            h3 {
+                font-size: 25px; padding-top: 0px; padding-left: 0px; margin-top:0px;
+                span { color: grey; font-size: 20px; }
+            }
+        }
+        .ci-r-two-columns{
+            position: relative; left:0px; top:0px; width: 100%; height: auto; display: inline-flex; justify-content: space-between;
+            .ci-r-tc-column{
+                position: relative; left:0px; top:0px; width: 50%;
+
+                h3 {
+                    font-weight: normal; margin:0px; padding:0px;
+                    span { color: grey; font-size: 20px; }
+                }
+                p{ margin:0px; }
+                h4{margin-top:0px;}
+            }
+        }
+
+        // Send an email elements
+        .ci-form-header{
+            position: relative; left:0px; top:0px; width: 100%; height: 60px; display: inline-flex; justify-content: space-between;
+            input{
+                position: relative; left:0px; top:0px; width: 30%; height: 42px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0, 0, 0, 0.2);
+                padding-left:20px;
+            }
+        }
+        .ci-form-message{
+            position: relative; left:0px; top:0px; width: 100%; height: 200px;
+            textarea{
+                position: relative; left:0px; width:calc(100% - 22px); top:0px; background: rgba(0,0,0,0.05); border: 1px solid rgba(0, 0, 0, 0.2); height: 100%;
+                padding-left:20px; padding-top:10px;
+            }
+        }
+        .ci-button{
+            position: relative; left:0px; top:0px; width: 100%; height: 50px; display: inline-flex; justify-content: flex-end; margin-top:20px;
+            button{
+                position: relative; height: 34px; border:none; color:#333; background: #cee002; padding:3px 20px;
+            }
+        }
+    }
+}
+
+
+/********* MOBILE VERSION ************/
+
+@media screen and (max-width: 1300px) {
+    .contact-info{
+        .ci-line{
+
+        }
+        .ci-rest{
+            width: calc(100% - 200px);
+
+            .ci-r-two-columns{
+                .ci-r-tc-column{
+                    h3 {
+                        font-size:20px;
+                    }
+                    p{ margin:0px; }
+                    h4{margin-top:0px;}
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .contact-info{
+        flex-wrap: wrap;
+        .ci-line{
+            width: 100%; height: 40px;
+            .line{
+                width: 160px;
+            }
+        }
+        .ci-rest{
+            width: calc(100% - 0px);
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .contact-info{
+        flex-wrap: wrap;
+        .ci-line{
+            width: 100%; height: 40px;
+            .line{
+                width: 160px;
+            }
+        }
+        .ci-rest{
+            width: calc(100% - 0px);
+            .ci-r-two-columns{
+                flex-wrap: wrap;
+                .ci-r-tc-column{width: 100%;}
+                .ci-r-tc-column:last-child{margin-top:30px;}
+            }
+
+            .ci-form-header{
+                flex-wrap: wrap; height: auto;
+                input{
+                    width: 100%; margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+

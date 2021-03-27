@@ -1,0 +1,34 @@
+.product-gallery-images{
+    .form-image-label{
+        position:relative;
+        display:block;
+        width:100%;
+        #upload-files-label{
+            position:relative;
+            background:#fff;
+            left:0px;
+            top:0px;
+            width:100%;
+            height:300px;
+            border-radius:5px;
+            border:1px dashed rgba(0,0,0,.2);
+            text-align:center;
+            i{
+                font-size:60px;
+                color:rgba(0,0,0,0.3);
+                margin-top:90px;
+                transition:all 0.2s;
+                margin-bottom:10px;
+            }
+            p{
+                font-weight:bold;
+                color:rgba(0,0,0,0.3);
+                transition:all 0.2s;
+            }
+        }
+        #upload-files-label:hover{cursor:pointer;}
+        #upload-files-label:hover i,
+        #upload-files-label:hover p{color:#333;}
+    }
+    input{display: none;}
+}
