@@ -13,7 +13,7 @@
                 <a href="#">{{__('Über uns')}}</a>
             </div>
             <div class="single-link">
-                <a href="#">{{__('Blog')}}</a>
+                <a href="{{route('public-part.blog.blog')}}">{{__('Blog')}}</a>
             </div>
             <div class="single-link">
                 <a href="{{route('public.contact-us')}}">{{__('Kontaktiere uns')}}</a>

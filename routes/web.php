@@ -28,10 +28,16 @@ Route::group(['namespace' => 'SystemCore\Login', 'prefix' => '/login'], function
 Route::group(['namespace' => 'PublicPart', 'prefix' => '/'], function(){
     Route::get ('/',                                'HomeController@home')->name('public.home');
     Route::get ('/contact-us',                      'HomeController@contactUs')->name('public.contact-us');
+
+    Route::group(['prefix' => '/blog'], function(){
+        Route::get ('/',                                 'BlogController@index')->name('public-part.blog.blog');
+        Route::get ('/category/{id}',                    'BlogController@indexWithCategories')->name('public-part.blog.blog.with-categories');
+        Route::get ('/preview/{id}',                     'BlogController@preview')->name('public-part.blog.preview');
+    });
 });
 
 
-Route::group(['namespace' => 'SystemCore\App', 'prefix' => '/', 'middleware' => 'loggedUser'], function(){
+Route::group(['namespace' => 'SystemCore\App', 'prefix' => '/system/', 'middleware' => 'loggedUser'], function(){
 
     Route::group(['namespace' => 'Dashboard', 'prefix' => '/dashboard'], function() {
         Route::get('/', 'DashboardController@index')->name('system-core.app.dashboard');

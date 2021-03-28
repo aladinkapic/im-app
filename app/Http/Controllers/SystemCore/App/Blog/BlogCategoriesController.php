@@ -3,9 +3,10 @@
 namespace App\Http\Controllers\SystemCore\App\Blog;
 
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\System\Core\Filters;
-use App\Http\Controllers\System\Core\ImageController;
+use App\Http\Controllers\SystemCore\App\Core\Filters;
+use App\Http\Controllers\SystemCore\App\Core\ImageController;
 use App\Models\SystemCore\Blog\BlogCategories;
+use App\Models\SystemCore\Core\File;
 use Illuminate\Http\Request;
 
 class BlogCategoriesController extends Controller{

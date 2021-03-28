@@ -3,41 +3,16 @@
         <h1> Alkaris d.o.o </h1>
     </div>
     <div class="top-menu-links">
-        <!-- Left top icons -->
-        <div class="left-icons">
-            <div class="single-li">
-                <a href="" target="_blank" title="">
-                    <i class="fas fa-shopping-cart"></i>
-                    <div class="number-of"><p>{{$inCart ?? '0'}}</p></div>
-                </a>
-            </div>
-            <div class="single-li" title="Odaberite jezik">
-                <i class="fas fa-globe-americas"></i>
-                <div class="number-of"><p>3</p></div>
-            </div>
-
-            <!-- <div class="single-li">
-                <p>Novosti</p>
-            </div> -->
-
-            <a href="" target="_blank">
-                <div class="single-li">
-                    <p>Blog</p>
-                </div>
-            </a>
-
-            <a href="">
-                <div class="single-li">
-                    <p>WebShop</p>
-                </div>
-            </a>
-        </div>
-
         <!-- Right top icons -->
         <div class="right-icons">
             <a href="">
                 <div class="single-li">
                     <p><b>Root Admin</b></p>
+                </div>
+            </a>
+            <a href="">
+                <div class="single-li">
+                    <i class="fas fa-power-off"></i>
                 </div>
             </a>
         </div>
@@ -100,23 +75,6 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </a>
-    </div>
-
-    <div class="bottom-icons">
-        <div class="bottom-icon" title="Dodatne opcije">
-            <i class="fas fa-cog"></i>
-        </div>
-        <div class="bottom-icon">
-            <i class="fas fa-envelope-open-text"></i>
-        </div>
-        <div class="bottom-icon">
-            <i class="fas fa-file-csv"></i>
-        </div>
-        <a href="">
-            <div class="bottom-icon" title="Odjavite se">
-                <i class="fas fa-power-off"></i>
             </div>
         </a>
     </div>

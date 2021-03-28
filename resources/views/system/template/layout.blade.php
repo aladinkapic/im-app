@@ -13,6 +13,7 @@
     <script src="https://kit.fontawesome.com/cdf2a0a58b.js"></script>
 
     <!-- Javascript scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.min.js"></script>
     <script src="{{asset('js/system.js')}}"></script>
 </head>
 <body>

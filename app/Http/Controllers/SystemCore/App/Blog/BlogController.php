@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\SystemCore\App\Blog;
 
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\SystemCore\App\Core\Filters;
 use App\Http\Controllers\SystemCore\App\Core\ImageController;
 use App\Models\SystemCore\Blog\BCDoubleImages;
 use App\Models\SystemCore\Blog\BCHeaders;
@@ -19,17 +20,18 @@ class BlogController extends Controller{
     public function getCategories(){ return BlogCategoriesController::getCategories(); }
 
     public function index(){
-        $posts = Blog::where('id', '>',  0)->get();
-//        $posts = Filters::filter($posts);
+        $posts = Blog::where('id', '>',  0);
+        $posts = Filters::filter($posts);
 
-//        $filters = [
-//            'title' => 'Naslov',
-//            'categoryRel.title' => 'Kategorija',
-//            'short_description' => 'Kratki opis',
-//        ];
+        $filters = [
+            'title' => 'Naslov',
+            'categoryRel.title' => 'Kategorija',
+            'short_description' => 'Kratki opis',
+        ];
 
         return view($this->br.'.index', [
-            'posts' =>$posts
+            'posts' =>$posts,
+            'filters' => $filters
         ]);
     }
     public function getData($action, $id = null){

@@ -27,26 +27,25 @@
                 <div class="ci-line"> <div class="line"></div> </div>
                 <div class="ci-rest">
                     <div class="ci-r-header">
-                        <h3>Sarajevo, <span>Bosna i Hercegovina</span></h3>
+                        <h3>Munchen, <span>Germany</span></h3>
                     </div>
 
                     <div class="ci-r-two-columns">
                         <div class="ci-r-tc-column">
                             <p class="adress_details">
-                                Muhameda ef. Pandže 55<br>
-                                71000 Sarajevo, Bosna i Hercegovina
+                                Address with number<br>
+                                65000 Munich, Germany
                             </p>
                             <h5>{{__('EMAIL ADRESE')}}</h5>
                             <p>
-                                <i class="fas fa-at"></i> <span title="{{__('Naš gmail račun')}}">alkaris@gmail.com</span> <br>
-                                <i class="fas fa-at"></i> <span title="{{__('Naš info račun')}}">info@alkaris.com</span>
+                                <i class="fas fa-at"></i> <span title="{{__('Naš gmail račun')}}">info@email.com</span> <br>
                             </p>
                         </div>
                         <div class="ci-r-tc-column">
                             <h4>{{__('POZOVITE NAS')}}</h4>
 
                             <h3>(+387) 61 683 449</h3>
-                            <h3>(+387) 62 759 331</h3>
+                            <h3>(+387) 61 683 449</h3>
 
                             <h5>Radno vrijeme</h5>
                             <p>{{__('Ponedjeljak - Petak : 9:00 - 17:00')}}</p>
@@ -60,17 +59,25 @@
                 <div class="ci-line"> <div class="line"></div> </div>
                 <div class="ci-rest">
                     <div class="ci-form-header">
-                        {!! Form::text('name', '', ['class' => 'contact-input', 'id' => 'name', 'placeholder' => __('Vaše ime')]) !!}
-                        {!! Form::email('email', '', ['class' => 'contact-input', 'id' => 'email', 'placeholder' => __('Vaš email')]) !!}
-                        {!! Form::text('subject', '', ['class' => 'contact-input', 'id' => 'subject', 'placeholder' => __('Naslov poruke')]) !!}
+                        {!! Form::text('name', '', ['class' => 'contact-input', 'id' => 'name', 'placeholder' => __('Name')]) !!}
+                        {!! Form::email('email', '', ['class' => 'contact-input', 'id' => 'email', 'placeholder' => __('E-Mail Adresse')]) !!}
+                        {!! Form::text('subject', '', ['class' => 'contact-input', 'id' => 'subject', 'placeholder' => __('Telefon')]) !!}
+                    </div>
+
+                    <div class="ci-form-header">
+                        {!! Form::text('name', '', ['class' => 'contact-input', 'id' => 'name', 'placeholder' => __('Was soll gereinigt werden?')]) !!}
+                        {!! Form::email('email', '', ['class' => 'contact-input', 'id' => 'email', 'placeholder' => __('Wie viele qm2 ?')]) !!}
+                        {!! Form::text('subject', '', ['class' => 'contact-input', 'id' => 'subject', 'placeholder' => __('Wie oft soll gereinigt werden?')]) !!}
                     </div>
 
                     <div class="ci-form-message">
-                        {!! Form::textarea('message', '', ['class' => 'contact-input', 'id' => 'message', 'placeholder' => __('Vaša poruka')]) !!}
+                        {!! Form::textarea('message', '', ['class' => 'contact-input', 'id' => 'message', 'placeholder' => __('Nachricht')]) !!}
                     </div>
 
+                    <br>
+
                     <div class="ci-button">
-                        <button class="contact-us-btn">{{__('POŠALJITE PORUKU')}}</button>
+                        <button class="contact-us-btn">{{__('JETZT ANFRAGEN')}}</button>
                     </div>
                 </div>
             </div>

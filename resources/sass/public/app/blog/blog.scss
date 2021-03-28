@@ -53,6 +53,41 @@
     }
 }
 
+.pages{
+    position:relative;
+    left:calc(50% - 700px);
+    width:1400px;
+    height:40px;
+    background: #EFEFEF;
+    margin-top:40px;
+    border-radius:2px;
+    overflow:hidden;
+    margin-bottom:0px;
+    display: inline-flex;
+
+    .single-page, .single-blog-page{
+        position:relative;
+        left:0px;
+        top:0px;
+        width:40px;
+        height:40px;
+        text-align:center;
+        transition: all 0.2s;
+        border-right:1px solid #fff;
+        p{
+            margin-top:9px;
+            font-weight:bold;
+        }
+    }
+    .focus{background: #BF4152; p{color:#fff;}}
+    .next-one{width: 160px; p{font-weight: normal;}}
+    .single-page:hover, .single-blog-page:hover{
+        cursor: pointer;
+        background: #BF4152;
+        p{color: #fff;}
+    }
+}
+
 
 @media screen and (max-width: 1500px){
     .header-with-line, .pages{

@@ -14,10 +14,12 @@
 
 @section('content')
     <div class="content-wrapper content-wrapper-bs">
+        @include('system.template.snippets.filters', ['var' => $posts])
         <table class="table table-bordered" id="filtering">
             <thead>
             <tr>
                 <th scope="col" class="text-center">#</th>
+                @include('system.template.snippets.filters_header')
                 <th width="120p" class="akcije text-center">{{__('Akcije')}}</th>
             </tr>
             </thead>

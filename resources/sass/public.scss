@@ -60,6 +60,7 @@ a{text-decoration: none; color:#222;}
 .grey-color{background: #F9F9F9;}
 
 @import "system/login/login";
+@import "resources/sass/public/app/generic/generic";
 
 // Import menu
 @import "public/layout/menu";
@@ -76,3 +77,6 @@ a{text-decoration: none; color:#222;}
 
 // Contact us
 @import "public/contact-us/contact-us";
+
+// Blog
+@import "public/app/blog/blog";
