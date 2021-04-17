@@ -12,7 +12,7 @@
                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</h4>
 
                     <div class="button">
-                        <a href="">POGLEDAJTE VIŠE</a>
+                        <a href="">MEHR SEHEN</a>
                     </div>
                 </div>
             </div>

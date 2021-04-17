@@ -1,9 +1,9 @@
 @extends("layouts.public-layout")
 
-@section('breadcrumb-left') {{__('Novosti')}} @endsection
+@section('breadcrumb-left') {{__('Blog')}} @endsection
 @section('breadcrumb-right')
-    <span>/</span>
-    <a href="{{route('public-part.blog.blog')}}" class="active-l"> {{__('Novosti')}} </a>
+    <span>Startseite / </span>
+    <a href="{{route('public-part.blog.blog')}}" class="active-l"> {{__('Blog')}} </a>
 @endsection
 
 @section('body')

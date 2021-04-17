@@ -1,7 +1,7 @@
 @extends('layouts.public-layout')
 
 @section('breadcrumb-left') {{__('Dobrodošli na webstranicu Firma D.O.O')}} @endsection
-@section('breadcrumb-right') <a href="#">{{__('O nama')}}</a> @endsection
+@section('breadcrumb-right') <a href="#">{{__('Über uns')}}</a> @endsection
 
 @section('body')
     @include('app.app.homepage.slider')

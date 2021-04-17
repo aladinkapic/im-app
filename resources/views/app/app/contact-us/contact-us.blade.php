@@ -6,7 +6,10 @@
 @stop
 
 @section('breadcrumb-left') {{__('Dobrodošli na webstranicu Firma D.O.O')}} @endsection
-@section('breadcrumb-right') <a href="#">{{__('Kontaktirajte nas')}}</a> @endsection
+@section('breadcrumb-right')
+    <span>Startseite / </span>
+    <a href="#" class="active-l"> {{__('Kontaktiere uns')}} </a>
+@endsection
 
 @section('other-js-link')
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAApiBLPehhhJkDFqzlfNGN99n18N4PZxA"></script>
@@ -18,7 +21,7 @@
 
         <!-- google map with custom style and marker -->
 
-        <div id="google_map"></div>
+        <div id="google_map" style="margin-top:0px;"></div>
 
 
 

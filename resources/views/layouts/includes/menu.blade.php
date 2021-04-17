@@ -37,9 +37,6 @@
         <i class="fas fa-times"></i>
     </div>
     <div class="languages">
-        <div class="single_language">
-            <p>ENG</p>
-        </div>
         <div class="single_language single_language2">
             <p>GER</p>
         </div>
@@ -51,7 +48,7 @@
             <a href="/">STARTSEITE</a>
         </div>
         <div class="menu_link left_with_sublinks" index="0">
-            <a href="#">BLOG</a>
+            <a href="{{route('public-part.blog.blog')}}">BLOG</a>
         </div>
         <div class="menu_sublinks">
             <div class="menu_sublink">
@@ -74,7 +71,7 @@
             <a href="#">ÜBER UNS</a>
         </div>
         <div class="menu_link">
-            <a href="#">KONTAKTIERE UNS</a>
+            <a href="{{route('public.contact-us')}}">KONTAKTIERE UNS</a>
         </div>
     </div>
 

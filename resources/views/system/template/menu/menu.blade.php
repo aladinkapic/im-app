@@ -1,6 +1,6 @@
 <div class="s-top-menu">
     <div class="app-name">
-        <h1> Alkaris d.o.o </h1>
+        <h1> Administracija </h1>
     </div>
     <div class="top-menu-links">
         <!-- Right top icons -->
@@ -28,7 +28,7 @@
             <img src="{{asset('images/user.png')}}" alt="">
         </div>
         <div class="user-desc">
-            <h4>{{$loggedUser->name ?? ''}}</h4>
+            <h4> Administrator </h4>
             <p>{{$loggedUser->role ?? ''}}</p>
             <p>
                 <i class="fas fa-circle"></i>

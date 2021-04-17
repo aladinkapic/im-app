@@ -2,9 +2,11 @@
     <div class="element">
         <img src="{{asset('images/public/hands.png')}}" alt="">
 
+        <div class="blank"></div>
+
         <div class="element-inside">
             <div class="element-content">
-                <h1> MI SMO SE SPECIJALIZIRALI U .. </h1>
+                <h1> Wir sind besonders stolz auf das Folgende: </h1>
 
                 <div class="element-content-row">
                     <div class="ec-r-icon">
@@ -41,7 +43,7 @@
 
                 <div class="element-content-row">
                     <a href="">
-                        <button> POGLEDAJTE VIŠE </button>
+                        <button> MEHR SEHEN </button>
                     </a>
                 </div>
             </div>

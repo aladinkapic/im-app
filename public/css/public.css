@@ -2149,7 +2149,8 @@ button {
   left: 0px;
   top: 0px;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
+  background: #fff;
 }
 
 .our_services .header {
@@ -2157,8 +2158,8 @@ button {
   left: 0px;
   top: 0px;
   width: 100%;
-  height: 120px;
-  padding-top: 30px;
+  min-height: 120px;
+  padding-top: 60px;
 }
 
 .our_services .header .header_row {
@@ -2262,7 +2263,7 @@ button {
 
 @media screen and (max-width: 800px) {
   .our_services {
-    background: red;
+    padding-bottom: 0px;
   }
 
   .our_services .service_row .single_service {
@@ -2298,31 +2299,43 @@ button {
   top: 0px;
   width: 100%;
   min-height: 400px;
+  overflow-x: hidden;
 }
 
 .element img {
-  position: relative;
+  position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
+  height: 100%;
+  width: auto;
+}
+
+.element .blank {
+  position: absolute;
+  left: 55%;
+  width: 45%;
+  height: 100%;
+  background: #F9F9F9;
 }
 
 .element .element-inside {
-  position: absolute;
+  position: relative;
   top: 0px;
-  left: calc(50% + 200px);
-  width: 500px;
-  height: 100%;
+  left: 55%;
+  width: calc(700px - 5%);
+  height: auto;
   z-index: 10;
-  display: inline-flex;
-  align-items: center;
+  overflow: hidden;
+  background: #F9F9F9;
 }
 
 .element .element-inside .element-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-left: 30px;
   position: relative;
-  width: 100%;
-  height: 80%;
-  background: #fff;
+  width: calc(100% - 30px);
+  background: #F9F9F9;
 }
 
 .element .element-inside .element-content h1 {
@@ -2365,7 +2378,7 @@ button {
 
 .element .element-inside .element-content .element-content-row .ec-r-text p {
   margin: 0px;
-  text-align: justify;
+  font-size: 14px;
 }
 
 .element .element-inside .element-content .element-content-row button {
@@ -2375,6 +2388,65 @@ button {
   padding: 5px 15px;
   border-radius: 3px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 1500px) {
+  .element .element-inside {
+    left: 50%;
+    width: calc(600px - 10%);
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .element .element-inside {
+    left: 0px;
+    width: calc(100% - 0px);
+  }
+
+  .element .element-inside .element-content {
+    left: 50px;
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .element .element-inside {
+    left: 0px;
+    width: calc(100% - 0px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .element .element-inside .element-content {
+    margin-left: 0px;
+    width: calc(100% - 40px);
+    left: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .element .element-inside .element-content h1 {
+    margin-left: 0px;
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .element .element-inside .element-content .element-content-row {
+    left: 0px;
+    width: 100%;
+  }
+
+  .element .element-inside .element-content .element-content-row .ec-r-icon i {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .element .element-inside .element-content .element-content-row .ec-r-text p {
+    margin: 0px;
+    font-size: 14px;
+    text-align: justify;
+  }
 }
 
 .h-latest-news {

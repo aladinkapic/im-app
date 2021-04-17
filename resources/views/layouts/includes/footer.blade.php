@@ -10,17 +10,17 @@
         <div class="column">
             <div class="single_link">
                 <a href="#">
-                    <p>Česta pitanja</p>
+                    <p>Startseite</p>
                 </a>
             </div>
             <div class="single_link">
                 <a href="#">
-                    <p>Informacije o komapniji</p>
+                    <p>Unsere Dienstleistungen</p>
                 </a>
             </div>
             <div class="single_link">
                 <a href="#">
-                    <p>Garancija</p>
+                    <p>Einloggen</p>
                 </a>
             </div>
         </div>
@@ -50,12 +50,12 @@
         <div class="column last_column">
             <div class="single_link">
                 <a href="#">
-                    <p>Kontakt</p>
+                    <p>Über uns</p>
                 </a>
             </div>
             <div class="single_link">
                 <a href="#">
-                    <p>Politika poslovanja</p>
+                    <p>Kontaktiere uns</p>
                 </a>
             </div>
             <div class="single_link">
@@ -67,7 +67,7 @@
     </div>
     <div class="bottom_part">
         <h4>
-            &copy; Copyright {{date('Y')}} Firma d.o.o, Sva prava zadržana
+            &copy; Copyright {{date('Y')}} Firma d.o.o
         </h4>
     </div>
 </div>
